@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* NAVBAR */
+nav {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu button {
+  margin-left: 10px;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* LOGIN */
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* PRODUCTS */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  width: 200px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  background: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+/* CART MODAL */
+.cart {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  padding: 20px;
+  z-index: 10;
+}
+
+.cart button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #e67e22;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}
