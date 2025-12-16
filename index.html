@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>FurniMarket | Digital Furniture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin(); renderProducts(); renderCart();">
+
+<!-- NAVBAR -->
+<nav>
+  <h2>FurniMarket</h2>
+  <div class="menu">
+    <button onclick="toggleCart()">Keranjang (<span id="cart-count">0</span>)</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</nav>
+
+<!-- LOGIN BOX -->
+<div class="login-box" id="loginBox">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="content" class="hidden">
+  <header class="hero">
+    <h1>Furniture Modern Berkualitas</h1>
+    <p>Belanja online mudah dan nyaman</p>
+  </header>
+
+  <section class="products" id="product-list">
+    <!-- Produk akan dirender oleh JS -->
+  </section>
+</div>
+
+<!-- CART MODAL -->
+<div id="cartModal" class="cart hidden">
+  <h3>Keranjang Belanja</h3>
+  <div id="cartItems"></div>
+  <p>Total: Rp <span id="cartTotal">0</span></p>
+  <button onclick="checkout()">Checkout</button>
+  <button onclick="toggleCart()">Tutup</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
